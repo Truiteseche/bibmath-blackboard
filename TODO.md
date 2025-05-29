@@ -15,6 +15,7 @@
 - Mettre en valeur les mots importants ("rougedico" façon code/grok)
 - Améliorer l'intégration YouTube
 - Rendre les titres sticky
+- Option pour désactiver les pubs (désactivée par défaut)
 
 ## UX
 

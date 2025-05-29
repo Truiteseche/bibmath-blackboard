@@ -2,12 +2,11 @@
 
 @font-face {
     font-family: "Inter";
-    src: url("/assets/fonts/Inter-VariableFont.ttf") format("truetype");
+    src: var(--font-url);
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
-
 
 
 :root {
@@ -20,7 +19,7 @@
     /* main theme background color (header) */
     --text-color: 255, 255, 255;
     --highlight-color: 150, 220, 150;
-    --link-color: 24, 66, 24;
+    --link-color: 150, 150, 220;
     --button-color: 4, 66, 24;
     --button-text-color: 255, 255, 255;
 }
@@ -32,7 +31,6 @@ body {
     margin: 0;
     padding: 0;
     /* font-family: "Inter", monospace, sans-serif !important; */
-    /* font-family: ; */
 }
 
 
@@ -88,15 +86,35 @@ div#main {
 
 div#maincentre {
     padding: 5px;
-    border-inline: 1px solid #89bf8966;
+    border-inline: 2px solid #89bf8966;
     /* border-radius: 20px; */
 }
 #piedcentre,
 #sousmenuhautcentre,
 #menuhautcentre,
 #bandeaucentre {
-    border-inline: 1px solid #89bf8966;
+    border-inline: 2px solid #89bf8966;
 }
+
+
+:is(.chemin, .contenudroite) a:link {
+    color: rgb(var(--link-color)) !important;
+}
+
+
+#droite {
+    border-left: 2px solid #89bf8966 !important;
+    padding-right: 5px !important;
+}
+
+.contenudroite h1 {
+    color: rgb(var(--highlight-color)) !important;
+    background-color: rgba(var(--highlight-color), .2) !important;
+    border-radius: 5px;
+    padding-block: 5px !important;
+    height: auto !important;
+}
+
 
 #contenugauche h1,
 .titrepartie {
@@ -140,6 +158,16 @@ button.boutonsvideo {
 .MJXc-display .MathJax_CHTML {
     padding: 7px 5px !important;
     border-radius: 10px;
+}
+
+.liste li {
+    background: var(--bullet-url) no-repeat -18px -13px !important;
+    background-size: 48px 48px !important;
+    /* padding-left: 24px !important; */
+}
+.contenudroite li {
+    background: var(--bullet-url) no-repeat -10px -10px !important;
+    background-size: 36px 36px !important;
 }
 
 #maincentre {
