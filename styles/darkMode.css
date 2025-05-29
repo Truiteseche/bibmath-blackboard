@@ -1,3 +1,148 @@
-* {
-    background-color: black;
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap'); */
+
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/Inter-VariableFont.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+:root {
+    /* --background-color-1: #101510; */
+    --background-color-1: 28, 27, 34;
+    --background-color-2: 41, 54, 41;
+    /* --background-color-2: #3c5e3c; */
+    --background-color-3: 24, 66, 24;
+    --background-color-alt: 120, 120, 30;
+    /* main theme background color (header) */
+    --text-color: 255, 255, 255;
+    --highlight-color: 150, 220, 150;
+    --link-color: 24, 66, 24;
+    --button-color: 4, 66, 24;
+    --button-text-color: 255, 255, 255;
+}
+
+html,
+body {
+    background-color: rgb(var(--background-color-1)) !important;
+    color: rgb(var(--text-color)) !important;
+    margin: 0;
+    padding: 0;
+    /* font-family: "Inter", monospace, sans-serif !important; */
+    /* font-family: ; */
+}
+
+
+/* Background colors */
+
+div#main,
+#menuetsousmenu > nav#sousmenuhaut,
+#bandeaucentre,
+#bandeaucentre > #bandeaulogo,
+#bandeau,
+#menuhaut,
+#piedcentre,
+#pied,
+#baspied {
+    background: rgb(var(--background-color-1)) !important;
+}
+
+
+#listemenuhaut > .item,
+#sousmenuhaut > #sousmenuhautcentre,
+nav#menuhaut > #menuhautcentre,
+#listesousmenuhaut {
+    background: rgb(var(--background-color-1)) !important;
+}
+
+/* Others */
+
+#listesousmenuhaut a {
+    color: rgb(var(--text-color)) !important;
+}
+
+#listemenuhaut .itemselectionne {
+    background: rgba(var(--highlight-color), .1) !important;
+    color: black !important;
+}
+
+.rougedico {
+    color: rgb(var(--highlight-color)) !important;
+    background-color: rgba(var(--highlight-color), .2) !important;
+    border-radius: 5px;
+    padding: 1px;
+    padding-inline: 3px;
+    font-weight: 600;
+}
+
+#listesousmenuhaut {
+    border: none !important;
+}
+
+div#main {
+    margin-bottom: 0 !important;
+}
+
+div#maincentre {
+    padding: 5px;
+    border-inline: 1px solid #89bf8966;
+    /* border-radius: 20px; */
+}
+#piedcentre,
+#sousmenuhautcentre,
+#menuhautcentre,
+#bandeaucentre {
+    border-inline: 1px solid #89bf8966;
+}
+
+#contenugauche h1,
+.titrepartie {
+    color: rgb(var(--highlight-color)) !important;
+}
+
+.titrepartie {
+    border: none !important;
+    border-bottom: 1px solid rgb(var(--highlight-color)) !important;
+    padding-bottom: 5px;
+}
+
+.theo {
+    background-color: rgba(var(--background-color-alt), .2) !important;
+    padding: 8px !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(var(--background-color-alt), .5) !important;
+    margin-inline: 0 !important;
+}
+
+button.boutonsvideo {
+    background: rgbA(var(--highlight-color), .2) !important;
+    color: rgb(var(--button-text-color)) !important;
+    border: 1px solid rgba(var(--highlight-color), .3) !important;
+    border-radius: 10px;
+    width: 100% !important;
+    padding: 10px;
+    margin-block: 10px;
+    text-decoration: none !important;
+    height: auto !important;
+    font-size: .8em;
+}
+
+:not(.theo) .MathJax_CHTML {
+    background: rgba(var(--background-color-alt), .3) !important;
+    padding: 1px 3px !important;
+    border-radius: 5px;
+    /* padding-inline: 3px; */
+}
+
+.MJXc-display .MathJax_CHTML {
+    padding: 7px 5px !important;
+    border-radius: 10px;
+}
+
+#maincentre {
+    background-color: rgb(var(--background-color-1)) !important;
+    color: rgb(var(--text-color)) !important;
 }

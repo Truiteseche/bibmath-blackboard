@@ -32,5 +32,8 @@
     "action": {
         "default_popup": "popup/popup.html",
         "default_title": "Bibmath Blackboard • A sleek Dark Mode for Bibmath.net"
+    },
+    "icons": {
+        "48": "assets/icons/bibmath-blackboard-logo-48.png"
     }
 }
