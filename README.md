@@ -23,6 +23,23 @@ We believe that a comfortable, visually appealing learning environment directly 
 
 Feel free to open an issue if you notice something wrong, and do not hesitate to provide your solution via a pull request!
 
+You can preview your changes to the code by installing the modified extension in developer mode:
+
+### Chrome
+
+1. Open Chrome and navigate to `chrome://extensions/`
+2. Enable "Developer mode" in the top right corner
+3. Click "Load unpacked" and select the extension directory
+4. The extension should now appear in your toolbar
+
+### Firefox
+
+1. Open Firefox and navigate to `about:debugging`
+2. Click "This Firefox" on the left sidebar
+3. Click "Load Temporary Add-on"
+4. Navigate to the extension directory and select the `manifest.json` file
+5. The extension will be installed temporarily (until Firefox is closed)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
