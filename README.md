@@ -5,8 +5,7 @@ Transform your math learning experience with **Bibmath Blackboard**, a web exten
 ## Features
 
 - **🎨 Beautiful Dark Theme** - Easy on the eyes with carefully crafted contrast ratios
-- **📐 Formula-Friendly** - Optimized readability for mathematical equations and symbols  
-- **🔄 Smart Toggle** - Switch between light and dark modes instantly
+- **📐 Formula-Friendly** - Optimized readability for mathematical equations and symbols
 - **⚡ Lightweight** - Minimal performance impact on your browsing
 - **🛠️ Enhanced UI** - Improved visual hierarchy and modern design elements
 
@@ -17,8 +16,6 @@ Transform your math learning experience with **Bibmath Blackboard**, a web exten
 3. Navigate to bibmath.net and enjoy your new dark mode!
 
 ## Why Bibmath Blackboard?
-
-> *"A nicer interface can only bolster students' will to study - they won't have any excuse not to learn!"*
 
 We believe that a comfortable, visually appealing learning environment directly impacts academic success. By reducing eye strain and creating a more pleasant browsing experience, students can focus on what matters most: understanding mathematics.
 
