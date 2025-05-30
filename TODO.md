@@ -16,6 +16,7 @@
 - Améliorer l'intégration YouTube
 - Rendre les titres sticky
 - Option pour désactiver les pubs (désactivée par défaut)
+- Masquer les indications vides
 
 ## UX
 

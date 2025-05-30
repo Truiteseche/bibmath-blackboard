@@ -241,7 +241,7 @@ button.boutonsvideo {
     padding-inline: 10px !important;
 }
 
-:not(.theo):not(.theo *) > .MathJax_CHTML {
+:not(:is(.theo, .exo)):not(:is(.theo *, .exo *)) > .MathJax_CHTML {
     background: rgba(var(--background-color-alt), .3) !important;
     padding: 1px 3px !important;
     border-radius: 5px;
@@ -267,6 +267,44 @@ button.boutonsvideo {
     color: rgb(var(--text-color)) !important;
 }
 
+
+/* EXERCICES */
+
+.exo {
+    background: rgb(var(--background-color-1)) !important;
+    color: rgb(var(--text-color)) !important;
+}
+
+#contenugauche .exo a.lienexo {
+    color: rgba(var(--text-color), .8) !important;
+}
+
+.exo .enonce {
+    margin-top: 10px !important;
+    background-color: rgba(var(--background-color-alt), .2) !important;
+    padding: 5px !important;
+    /* border-radius: 10px !important; */
+    border: 1px solid rgba(var(--background-color-alt), .2) !important;
+    border-radius: 5px 5px 0 0 !important;
+    border-bottom: none !important;
+}
+
+
+
+.exo .indication {
+    background-color: rgba(var(--link-color), .2) !important;
+    padding: 5px !important;
+    border: 1px solid rgba(var(--link-color), .2) !important;
+    border-bottom: none !important;
+}
+
+
+.exo .corrige {
+    background-color: rgba(var(--highlight-color), .2) !important;
+    padding: 5px !important;
+    border-radius: 0 0 5px 5px !important;
+    border: 1px solid rgba(var(--highlight-color), .2) !important;
+}
 
 
 /* HOME */
