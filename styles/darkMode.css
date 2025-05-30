@@ -111,6 +111,7 @@ div#maincentre {
 #droite {
     border-left: 2px solid rgba(var(--heading-color), .4) !important;
     padding-right: 5px !important;
+    margin-left: 5px !important;
 }
 
 .contenudroite h1 {
@@ -121,13 +122,23 @@ div#maincentre {
     height: auto !important;
 }
 
+.cours {
+    padding-inline: 10px !important;
+}
+
 
 #contenugauche h1,
-.titrepartie {
+.titrepartie,
+.separator {
     color: rgb(var(--heading-color)) !important;
 }
 
-.titrepartie {
+.separator {
+    margin-left: 15px;
+}
+
+.titrepartie,
+.separator {
     border: none !important;
     border-bottom: 1px solid rgb(var(--heading-color)) !important;
     padding-bottom: 5px;
@@ -160,6 +171,7 @@ div#maincentre {
     width: 100% !important;
     margin-bottom: 10px;
     font-size: .8em;
+    cursor: pointer;
 }
 .spoiler input[type="button"]:nth-last-child(2) {
     margin-bottom: 0 !important;
@@ -192,6 +204,43 @@ button.boutonsvideo {
     margin-bottom: 0 !important;
 }
 
+
+.titrecours {
+    color: rgb(var(--heading-color)) !important;
+    background: rgba(var(--heading-color), .1) !important;
+    border-radius: 7px !important;
+    border: 1px solid rgba(var(--heading-color), .1) !important;
+    padding-block: 5px !important;
+    height: auto !important;
+    cursor: pointer;
+    width: 100% !important;
+}
+
+.titrecours.activecours {
+    border-radius: 7px 7px 0 0 !important;
+    border-bottom: none !important;
+}
+
+.titrecours ~ .contenucours {
+    background: rgba(var(--heading-color), .05) !important;
+    padding: 10px;
+    border-radius: 0 0 7px 7px !important;
+    border: 1px solid rgba(var(--heading-color), .1) !important;
+    border-top: none !important;
+}
+
+.titrecours::after {
+    margin-inline: 5px;
+}
+
+.cours ~ .cardcours {
+    box-sizing: border-box;
+    width: 100% !important;
+    margin-inline: 0px !important;
+    margin-top: 20px !important;
+    padding-inline: 10px !important;
+}
+
 :not(.theo):not(.theo *) > .MathJax_CHTML {
     background: rgba(var(--background-color-alt), .3) !important;
     padding: 1px 3px !important;
@@ -215,5 +264,24 @@ button.boutonsvideo {
 
 #maincentre {
     background-color: rgb(var(--background-color-1)) !important;
+    color: rgb(var(--text-color)) !important;
+}
+
+
+
+/* HOME */
+h3.theme {
+    color: rgb(var(--heading-color)) !important;
+}
+
+.contenu * {
+    color: rgb(var(--text-color)) !important;
+}
+
+.lien {
+    color: rgb(var(--link-color)) !important;
+}
+
+div.text {
     color: rgb(var(--text-color)) !important;
 }
