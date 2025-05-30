@@ -18,10 +18,16 @@
     --background-color-alt: 120, 120, 30;
     /* main theme background color (header) */
     --text-color: 255, 255, 255;
-    --highlight-color: 150, 220, 150;
+    --heading-color: 150, 220, 150;
+    --highlight-color: 220, 120, 120;
     --link-color: 150, 150, 220;
     --button-color: 4, 66, 24;
     --button-text-color: 255, 255, 255;
+}
+
+/* Appliquer la police à tous les éléments */
+:not(.MathJax_CHTML):not(.MathJax_CHTML  *) {
+    font-family: system-ui, sans-serif !important;
 }
 
 html,
@@ -63,7 +69,7 @@ nav#menuhaut > #menuhautcentre,
 }
 
 #listemenuhaut .itemselectionne {
-    background: rgba(var(--highlight-color), .1) !important;
+    background: rgba(var(--heading-color), .1) !important;
     color: black !important;
 }
 
@@ -86,30 +92,30 @@ div#main {
 
 div#maincentre {
     padding: 5px;
-    border-inline: 2px solid #89bf8966;
+    border-inline: 2px solid rgba(var(--heading-color), .4);
     /* border-radius: 20px; */
 }
 #piedcentre,
 #sousmenuhautcentre,
 #menuhautcentre,
 #bandeaucentre {
-    border-inline: 2px solid #89bf8966;
+    border-inline: 2px solid rgba(var(--heading-color), .4);
 }
 
 
-:is(.chemin, .contenudroite) a:link {
+:is(.chemin, .contenudroite, #contenugauche) a:is(:link, :visited) {
     color: rgb(var(--link-color)) !important;
 }
 
 
 #droite {
-    border-left: 2px solid #89bf8966 !important;
+    border-left: 2px solid rgba(var(--heading-color), .4) !important;
     padding-right: 5px !important;
 }
 
 .contenudroite h1 {
-    color: rgb(var(--highlight-color)) !important;
-    background-color: rgba(var(--highlight-color), .2) !important;
+    color: rgb(var(--heading-color)) !important;
+    background-color: rgba(var(--heading-color), .2) !important;
     border-radius: 5px;
     padding-block: 5px !important;
     height: auto !important;
@@ -118,12 +124,12 @@ div#maincentre {
 
 #contenugauche h1,
 .titrepartie {
-    color: rgb(var(--highlight-color)) !important;
+    color: rgb(var(--heading-color)) !important;
 }
 
 .titrepartie {
     border: none !important;
-    border-bottom: 1px solid rgb(var(--highlight-color)) !important;
+    border-bottom: 1px solid rgb(var(--heading-color)) !important;
     padding-bottom: 5px;
 }
 
@@ -133,6 +139,39 @@ div#maincentre {
     border-radius: 10px !important;
     border: 1px solid rgba(var(--background-color-alt), .5) !important;
     margin-inline: 0 !important;
+}
+
+.spoiler {
+    background: transparent !important;
+    border: 1px solid rgba(var(--background-color-alt), .5) !important;
+    border-radius: 7px !important;
+    padding: 0 !important;   
+    margin-inline: 0 !important;
+}
+.spoiler:last-child {
+    margin-bottom: 0 !important;
+}
+
+.spoiler input[type="button"] {
+    background: transparent !important;
+    color: rgb(var(--button-text-color)) !important;
+    border: none;
+    padding: 10px !important;
+    width: 100% !important;
+    margin-bottom: 10px;
+    font-size: .8em;
+}
+.spoiler input[type="button"]:nth-last-child(2) {
+    margin-bottom: 0 !important;
+}
+.spoiler div.inner {
+    border: none;
+    color: rgb(var(--text-color)) !important;
+}
+
+.exemple {
+    padding-left: 8px !important;
+    border-color: rgb(var(--heading-color)) !important;
 }
 
 button.boutonsvideo {
@@ -146,13 +185,17 @@ button.boutonsvideo {
     text-decoration: none !important;
     height: auto !important;
     font-size: .8em;
+    cursor: pointer;
 }
 
-:not(.theo) .MathJax_CHTML {
+.boutonsvideo:nth-last-child(2) {
+    margin-bottom: 0 !important;
+}
+
+:not(.theo):not(.theo *) > .MathJax_CHTML {
     background: rgba(var(--background-color-alt), .3) !important;
     padding: 1px 3px !important;
     border-radius: 5px;
-    /* padding-inline: 3px; */
 }
 
 .MJXc-display .MathJax_CHTML {
