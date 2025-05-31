@@ -1,13 +1,11 @@
 {
-    "name": "Bibmath Blackboard",
+    "name": "Bibmath Blackboard - Alpha",
     "version": "0.0.1",
-    "description": "",
+    "description": "Un mode sombre élégant et des fonctionnalités de qualité de vie pour Bibmath.net",
     "homepage_url": "https://www.bibmath.net/",
     "manifest_version": 3,
     "permissions": [
-        "storage",
-        "activeTab",
-        "scripting"
+        
     ],
     "host_permissions": [
         "*://www.bibmath.net/*"

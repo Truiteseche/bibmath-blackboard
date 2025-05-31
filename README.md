@@ -11,7 +11,7 @@ Transform your math learning experience with **Bibmath Blackboard**, a web exten
 
 ## Installation
 
-1. Download the extension from [Chrome Web Store / Firefox Add-ons]
+1. Download the extension from [Chrome Web Store](https://chromewebstore.google.com/detail/bibmath-blackboard-alpha/lmckgfljakbegelanjffdglkcnmfelog) / Firefox Add-ons (coming soon)
 2. Click "Add to Browser"
 3. Navigate to bibmath.net and enjoy your new dark mode!
 
