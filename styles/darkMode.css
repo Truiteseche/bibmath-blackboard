@@ -107,6 +107,19 @@ div#maincentre {
     color: rgb(var(--link-color)) !important;
 }
 
+.chemin {
+    display: block;
+    width: max-content;
+    padding: 1px 3px !important;
+    color: rgb(var(--link-color), .5);
+    background: rgba(var(--link-color), .1) !important;
+    border: 1px solid rgba(var(--link-color), .1) !important;
+    border-radius: 5px !important;
+}
+.chemin:not(:last-child) {
+    margin-bottom: 5px !important;
+}
+
 
 #droite {
     border-left: 2px solid rgba(var(--heading-color), .4) !important;
