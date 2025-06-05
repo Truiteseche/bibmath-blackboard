@@ -5,7 +5,8 @@
     "homepage_url": "https://www.bibmath.net/",
     "manifest_version": 3,
     "permissions": [
-        
+        "storage",
+        "activeTab"
     ],
     "host_permissions": [
         "*://www.bibmath.net/*"

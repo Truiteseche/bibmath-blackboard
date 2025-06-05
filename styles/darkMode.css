@@ -9,7 +9,7 @@
 }
 
 
-:root {
+:root.bb-dark-mode {
     /* --background-color-1: #101510; */
     --background-color-1: 28, 27, 34;
     --background-color-2: 41, 54, 41;
@@ -25,7 +25,6 @@
     --button-text-color: 255, 255, 255;
 }
 
-/* Appliquer la police à tous les éléments */
 :not(.MathJax_CHTML):not(.MathJax_CHTML  *) {
     font-family: system-ui, sans-serif !important;
 }

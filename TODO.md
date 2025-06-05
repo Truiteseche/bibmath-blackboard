@@ -21,7 +21,13 @@
 - "Peek exos" : quand un lien vers un exo (par ex dans méthode) offre un aperçu de l'exo à la volée (iframe ou autre) sans fermer la page
 - Ajouter au footer les liens vers l'extension BB
 
-## Si la communauté gagne en importance
+## Bugs connus
+
+- Mauvaise gestion des tableaux (ex dans cours trigonométrie Math sup)
+- Header dégueulasse
+- Dark mode désactivé ne reset pas tout
+
+## Si la commu est suffisamment grande
 
 - Notation communautaire de la difficulté des exos
 - Leaderboard ?
