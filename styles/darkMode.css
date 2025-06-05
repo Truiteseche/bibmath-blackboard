@@ -42,9 +42,6 @@ body {
 /* Background colors */
 
 div#main,
-#menuetsousmenu > nav#sousmenuhaut,
-#bandeaucentre,
-#bandeaucentre > #bandeaulogo,
 #bandeau,
 #menuhaut,
 #piedcentre,
@@ -53,12 +50,35 @@ div#main,
     background: rgb(var(--background-color-1)) !important;
 }
 
+/* Header */
+.bb-dark-mode :is(
+    #bandeaucentre,
+    #bandeaucentre > #bandeaulogo,
+    nav#menuhaut,
+    nav#sousmenuhaut,
+    #listemenuhaut,
+    #menuhautgauche,
+    #listesousmenuhaut,
+    #sousmenuhautcentre,
+    #menuhautcentre,
+    #menuhautdroite
+) {
+    background: transparent !important;
+}
 
-#listemenuhaut > .item,
-#sousmenuhaut > #sousmenuhautcentre,
-nav#menuhaut > #menuhautcentre,
-#listesousmenuhaut {
-    background: rgb(var(--background-color-1)) !important;
+#bandeau {
+    max-width: 100% !important;
+}
+
+.bb-dark-mode :is(
+    #menuetsousmenu,
+    #bandeau
+) {
+    background: rgba(var(--background-color-2), .5) !important;
+    backdrop-filter: blur(5px) !important;
+}
+.bb-dark-mode #menuetsousmenu {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .3) !important;
 }
 
 /* Others */
@@ -66,10 +86,14 @@ nav#menuhaut > #menuhautcentre,
 #listesousmenuhaut a {
     color: rgb(var(--text-color)) !important;
 }
+#listesousmenuhaut :is(.item, .itemselectionne, .sousmenuitem) {
+    background: transparent !important;
+}
 
-#listemenuhaut .itemselectionne {
-    background: rgba(var(--heading-color), .1) !important;
+#listemenuhaut .itemselectionne, .sousmenuitemselectionne {
+    background: rgba(var(--heading-color), .5) !important;
     color: black !important;
+    border-bottom: 1px solid rgba(var(--heading-color), .5) !important;
 }
 
 .rougedico {
