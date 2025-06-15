@@ -1,6 +1,6 @@
 
-const bulletURL = chrome.runtime.getURL("../assets/images/bullet.svg");
-const fontURL = chrome.runtime.getURL("../assets/fonts/Inter-VariableFont.ttf");
+const bulletURL = chrome.runtime.getURL("assets/images/bullet.svg");
+const fontURL = chrome.runtime.getURL("assets/fonts/Inter-VariableFont.ttf");
 
 document.documentElement.style.setProperty("--bullet-url", `url('${bulletURL}')`);
 document.documentElement.style.setProperty("--font-url", `url('${fontURL}')`);
