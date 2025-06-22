@@ -1,9 +1,9 @@
 {
+    "manifest_version": 3,
     "name": "Bibmath Blackboard - Alpha",
     "version": "0.0.1",
     "description": "Un mode sombre élégant et des fonctionnalités de qualité de vie pour Bibmath.net",
     "homepage_url": "https://www.bibmath.net/",
-    "manifest_version": 3,
     "permissions": [
         "storage",
         "activeTab"
@@ -11,9 +11,6 @@
     "host_permissions": [
         "*://www.bibmath.net/*"
     ],
-    "background": {
-        "service_worker": "background/serviceWorker.js"
-    },
     "content_scripts": [
         {
             "matches": [
@@ -28,10 +25,6 @@
             "run_at": "document_start"
         }
     ],
-    "action": {
-        "default_popup": "popup/popup.html",
-        "default_title": "Bibmath Blackboard • A sleek Dark Mode for Bibmath.net"
-    },
     "icons": {
         "48": "assets/icons/bibmath-blackboard-logo-48.png"
     },

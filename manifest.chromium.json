@@ -1,0 +1,9 @@
+{
+    "background": {
+        "service_worker": "background/serviceWorker.js"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "Bibmath Blackboard • A sleek Dark Mode for Bibmath.net"
+    }
+}
