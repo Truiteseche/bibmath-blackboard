@@ -27,18 +27,20 @@ You can preview your changes to the code by installing the modified extension in
 
 ### Chrome
 
-1. Open Chrome and navigate to `chrome://extensions/`
-2. Enable "Developer mode" in the top right corner
-3. Click "Load unpacked" and select the extension directory
-4. The extension should now appear in your toolbar
+1. Run `node build.js chromium`. You will find the output in `dist/`
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable "Developer mode" in the top right corner
+4. Click "Load unpacked" and select the extension directory
+5. The extension should now appear in your toolbar
 
 ### Firefox
 
-1. Open Firefox and navigate to `about:debugging`
-2. Click "This Firefox" on the left sidebar
-3. Click "Load Temporary Add-on"
-4. Navigate to the extension directory and select the `manifest.json` file
-5. The extension will be installed temporarily (until Firefox is closed)
+1. Run `node build.js firefox`. You will find the output in `dist/`
+2. Open Firefox and navigate to `about:debugging`
+3. Click "This Firefox" on the left sidebar
+4. Click "Load Temporary Add-on"
+5. Navigate to the extension directory and select the `manifest.json` file
+6. The extension will be installed temporarily (until Firefox is closed)
 
 ## License
 
