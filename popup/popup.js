@@ -10,11 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Dark mode toggle changed:", toggle.checked);
         chrome.storage.sync.set({ darkModeEnabled: toggle.checked });
         // send a message to the content script to toggle dark mode
-        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-            chrome.tabs.sendMessage(
-                tabs[0].id,
-                { type: "TOGGLE_DARK_MODE", enabled: toggle.checked }
-            );
+        chrome.tabs.query({ url: "*://*.bibmath.net/*" }, (tabs) => {
+            tabs.forEach(tab => {
+                chrome.tabs.sendMessage(
+                    tab.id,
+                    { type: "TOGGLE_DARK_MODE", enabled: toggle.checked }
+                );
+            });
         });
     });
 });

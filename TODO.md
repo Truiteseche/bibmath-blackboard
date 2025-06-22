@@ -19,15 +19,14 @@
 - Streak, notifications et affichage directement sur le site (jours consécutifs et semaines consécutives)
 - Compteur du temps passé sur bibmath (indiquer depuis [date de 1ère installation])
 - Split screen
-- Mode zen (plein écran (option pour désactiver), focus exercice, background gradient apaisant)
+- Mode zen (plein écran (option pour désactiver), focus exercice, background gradient apaisant, possibilité de scroll les exos) (cf mode zen vscode, overview playlist spotify)
 - "Peek exos" : quand un lien vers un exo (par ex dans méthode) offre un aperçu de l'exo à la volée (iframe ou autre) sans fermer la page
 - Ajouter au footer les liens vers l'extension BB
+- Lier le numéro de question à sa correction : lorsqu'on clique sur un numéro, on est amené à sa correction, et quand on clique sur le numéro dans la correction, on est amené à la question
 
 ## Bugs connus
 
 - Mauvaise gestion des tableaux (ex dans cours trigonométrie Math sup)
-- Header dégueulasse
-- Dark mode désactivé ne reset pas tout
 - .citation dans exercices (ex: https://www.bibmath.net/ressources/index.php?action=affiche&quoi=mpsi/feuillesexo/logique&type=fexo)
 
 ## Si la commu est suffisamment grande
