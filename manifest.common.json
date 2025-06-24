@@ -23,6 +23,18 @@
                 "content/darkModeHandler.js"
             ],
             "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "*://www.bibmath.net/*"
+            ],
+            "css": [
+                "styles/improveUX.css"
+            ],
+            "js": [
+                "content/improveUX.js"
+            ],
+            "run_at": "document_end"
         }
     ],
     "icons": {

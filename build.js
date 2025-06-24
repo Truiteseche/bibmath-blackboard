@@ -35,7 +35,7 @@ function mergeManifest(browser) {
 
 function copyDir(src, dest, browser) {
 	function shouldCopyFile(fileName, browser) {
-		const blacklist = ["build.js", "README.md"]
+		const blacklist = ["build.js", "README.md", "LICENSE", "TODO.md", ".gitignore"]
 		for (let supportedBrowser of supportedBrowsers) {
 			if (supportedBrowser !== browser) {
 				if (fileName.split(".").includes(supportedBrowser) || fileName.includes("manifest") || blacklist.includes(fileName)) {

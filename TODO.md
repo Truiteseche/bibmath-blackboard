@@ -27,9 +27,10 @@
 ## Bugs connus
 
 - Mauvaise gestion des tableaux (ex dans cours trigonométrie Math sup)
+- Mauvais affichage des bullets de la liste des discussions des forums à partir d'une certaine valeur
 - .citation dans exercices (ex: https://www.bibmath.net/ressources/index.php?action=affiche&quoi=mpsi/feuillesexo/logique&type=fexo)
 
-## Si la commu est suffisamment grande
+## Les trucs qui arriveront jamais parcqu'il faut une commu
 
 - Notation communautaire de la difficulté des exos
 - Leaderboard ?

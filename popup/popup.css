@@ -2,6 +2,7 @@ body {
     background-color: #1c1b22;
     color: white;
     width: 300px;
+    font-family: "Inter", system-ui, sans-serif !important;
 }
 
 a {

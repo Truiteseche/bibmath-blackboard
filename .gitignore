@@ -1,2 +1,4 @@
 *.zip
 annonce.md
+dist/
+.vscode/

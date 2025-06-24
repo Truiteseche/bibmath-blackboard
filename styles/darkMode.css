@@ -123,7 +123,7 @@
     border-inline: 2px solid rgba(var(--heading-color), .4);
 }
 
-.bb-dark-mode :is(.chemin, .contenudroite, #contenugauche) a:is(:link, :visited) {
+.bb-dark-mode :is(.chemin, #droite, #contenugauche) a:is(:link, :visited) {
     color: rgb(var(--link-color)) !important;
 }
 
@@ -288,6 +288,7 @@
     /* padding-left: 24px !important; */
 }
 .bb-dark-mode .contenudroite li {
+    list-style: none;
     background: var(--bullet-url) no-repeat -10px -10px !important;
     background-size: 36px 36px !important;
 }
