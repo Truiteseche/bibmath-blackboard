@@ -1,5 +1,8 @@
 # Bibmath Blackboard - Dark Mode for Bibmath
 
+> [!important]
+> The project is stopped since I (Truite Séchée) have now direct access to the source code of bibmath and I can therefore implement the features of this web extension directly on the site. I put this project as an "archive".
+
 Transform your math learning experience with **Bibmath Blackboard**, a web extension that brings an elegant dark mode to [bibmath.net](https://www.bibmath.net). Say goodbye to eye strain during those late-night study sessions!
 
 ## Features
